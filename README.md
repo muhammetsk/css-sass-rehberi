@@ -2,7 +2,7 @@
 
 *CSS ve Sass için makul bi yaklaşım*
 
-## İçindekier
+## İçindekiler
 
 1. [Terminoloji](#terminoloji)
     - [Kural Bildirimi](#kural-bildirimi)
@@ -63,23 +63,23 @@ Bir seçicinin stillerini içerir. Propertyler, key-value çiftleridir (*Örneğ
 }
 ```
 
-**[⬆ yukarı çık](#%C4%B0%C3%A7indekier)**
+**[⬆ yukarı çık](#%C4%B0%C3%A7indekiler)**
 
 ## CSS
 
 ### Biçimlendirme
 
-* Use soft tabs (2 spaces) for indentation
+* Girintiler için 2 boşluk kullanın
 * Prefer dashes over camelCasing in class names.
   - Underscores and PascalCasing are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
-* Do not use ID selectors
-* When using multiple selectors in a rule declaration, give each selector its own line.
-* Put a space before the opening brace `{` in rule declarations
-* In properties, put a space after, but not before, the `:` character.
-* Put closing braces `}` of rule declarations on a new line
-* Put blank lines between rule declarations
+* ID seçici kullanmayın
+* Birden çok seçici kullandığınızda, her seçiciye yeni satır verin
+* `{` parantezinden önce bir boşluk bırakın
+* `:`dan önce boşluk kullanmayın fakat sonrasında bir boşluk kullanın
+* `}` parantezinden sonra yeni bir satıra geçin
+* Kural bildirimleri arasına bir boş satır kullanın
 
-**Bad**
+**Kötü Kod**
 
 ```css
 .avatar{
@@ -93,7 +93,7 @@ Bir seçicinin stillerini içerir. Propertyler, key-value çiftleridir (*Örneğ
 }
 ```
 
-**Good**
+**İyi Kod**
 
 ```css
 .avatar {
@@ -203,7 +203,7 @@ Use `0` instead of `none` to specify that a style has no border.
   border: 0;
 }
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ yukarı çık](#%C4%B0%C3%A7indekiler)**
 
 ## Sass
 
@@ -292,7 +292,7 @@ Again: **never nest ID selectors!**
 
 If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ yukarı çık](#%C4%B0%C3%A7indekiler)**
 
 ## Translation
 
@@ -311,7 +311,7 @@ If you must use an ID selector in the first place (and you should really try not
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ yukarı çık](#%C4%B0%C3%A7indekier)**
 
 ## License
 
@@ -325,4 +325,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ yukarı çık](#%C4%B0%C3%A7indekier)**
