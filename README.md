@@ -6,23 +6,23 @@
 
 1. [Terminoloji](#terminoloji)
     - [Kural Bildirimi](#kural-bildirimi)
-    - [Seçiciler](#seciciler)
+    - [Seçiciler](#seçiciler)
     - [Propertyler](#propertyler)
 2. [CSS](#css)
-    - [Biçimlendirme](#bicimlendirme)
-    - [Yorum Satırları](#yorum-satirlari)
+    - [Biçimlendirme](#biçimlendirme)
+    - [Yorum Satırları](#yorum-satırları)
     - [OOCSS ve BEM](#oocss-ve-bem)
-    - [ID Seçiciler](#id-seciciler)
+    - [ID Seçiciler](#id-seçiciler)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
 3. [Sass](#sass)
     - [Syntax](#syntax)
     - [Ordering](#ordering)
-    - [Değişkenler](#degiskenler)
+    - [Değişkenler](#değişkenler)
     - [Mixinler](#mixinler)
     - [Extend directive](#extend-directive)
-    - [İç içe geçmiş seçiciler](#ic-ice-gecmis-seciciler)
-4. [Çeviri](#ceviri)
+    - [İç içe geçmiş seçiciler](#İç-içe-geçmiş-seçiciler)
+4. [Çeviri](#Çeviri)
 5. [Lisans](#lisans)
 
 ## Terminoloji
@@ -168,7 +168,7 @@ function ListingCard() {
   * `.ListingCard__title` is an “element” and represents a descendant of `.ListingCard` that helps compose the block as a whole.
   * `.ListingCard--featured` is a “modifier” and represents a different state or variation on the `.ListingCard` block.
 
-### ID selectors
+### ID Seçiciler
 
 While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to your rule declarations, and they are not reusable.
 
@@ -212,7 +212,7 @@ Use `0` instead of `none` to specify that a style has no border.
 * Use the `.scss` syntax, never the original `.sass` syntax
 * Order your regular CSS and `@include` declarations logically (see below)
 
-### Ordering of property declarations
+### Ordering
 
 1. Property declarations
 
@@ -255,11 +255,11 @@ Use `0` instead of `none` to specify that a style has no border.
     }
     ```
 
-### Variables
+### Değişkenler
 
 Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. `$_my-variable`).
 
-### Mixins
+### Mixinler
 
 Mixins should be used to DRY up your code, add clarity, or abstract complexity--in much the same way as well-named functions. Mixins that accept no arguments can be useful for this, but note that if you are not compressing your payload (e.g. gzip), this may contribute to unnecessary code duplication in the resulting styles.
 
@@ -267,7 +267,7 @@ Mixins should be used to DRY up your code, add clarity, or abstract complexity--
 
 `@extend` should be avoided because it has unintuitive and potentially dangerous behavior, especially when used with nested selectors. Even extending top-level placeholder selectors can cause problems if the order of selectors ends up changing later (e.g. if they are in other files and the order the files are loaded shifts). Gzipping should handle most of the savings you would have gained by using `@extend`, and you can DRY up your stylesheets nicely with mixins.
 
-### Nested selectors
+### İç içe geçmiş seçiciler
 
 **Do not nest selectors more than three levels deep!**
 
@@ -294,7 +294,7 @@ If you must use an ID selector in the first place (and you should really try not
 
 **[⬆ yukarı çık](#%C4%B0%C3%A7indekiler)**
 
-## Translation
+## Çeviri
 
   This style guide is also available in other languages:
 
@@ -311,9 +311,9 @@ If you must use an ID selector in the first place (and you should really try not
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
 
-**[⬆ yukarı çık](#%C4%B0%C3%A7indekier)**
+**[⬆ yukarı çık](#%C4%B0%C3%A7indekiler)**
 
-## License
+## Lisans
 
 (The MIT License)
 
