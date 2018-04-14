@@ -110,8 +110,8 @@ Bir seçicinin stillerini içerir. Propertyler, key-value çiftleridir (*Örneğ
 
 ### Yorum Satırları
 
-* Prefer line comments (`//` in Sass-land) to block comments.
-* Prefer comments on their own line. Avoid end-of-line comments.
+* Tek satır yorumlar için `//` tercih edin.
+* Yorum satırlarını yeni satırda yazın. Satır sonuna yazmaktan kaçının.
 * Write detailed comments for code that isn't self-documenting:
   - Uses of z-index
   - Compatibility or browser-specific hacks
@@ -137,7 +137,7 @@ We encourage some combination of OOCSS and BEM for these reasons:
 
 We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
 
-**Example**
+**Örnek**
 
 ```jsx
 // ListingCard.jsx
@@ -188,7 +188,7 @@ We recommend creating JavaScript-specific classes to bind to, prefixed with `.js
 
 Use `0` instead of `none` to specify that a style has no border.
 
-**Bad**
+**Kötü Kod**
 
 ```css
 .foo {
@@ -196,7 +196,7 @@ Use `0` instead of `none` to specify that a style has no border.
 }
 ```
 
-**Good**
+**İyi Kod**
 
 ```css
 .foo {
@@ -296,8 +296,9 @@ If you must use an ID selector in the first place (and you should really try not
 
 ## Çeviri
 
-  This style guide is also available in other languages:
+Bu rehberin diğer diller çeviriside mevcuttur:
 
+  - ![en](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/England.png) **English**: [airbnb/css](https://github.com/airbnb/css)
   - ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Bahasa Indonesia**: [mazipan/css-style-guide](https://github.com/mazipan/css-style-guide)
   - ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Chinese (Traditional)**: [ArvinH/css-style-guide](https://github.com/ArvinH/css-style-guide)
   - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: [Zhangjd/css-style-guide](https://github.com/Zhangjd/css-style-guide)
@@ -325,4 +326,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ yukarı çık](#%C4%B0%C3%A7indekier)**
+**[⬆ yukarı çık](#%C4%B0%C3%A7indekiler)**
