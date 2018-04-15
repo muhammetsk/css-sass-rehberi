@@ -113,7 +113,7 @@ Bir seçicinin stillerini içerir. Propertyler, key-value çiftleridir (*Örneğ
 * Tek satır yorumlar için `//` tercih edin.
 * Yorum satırlarını yeni satırda yazın. Satır sonuna yazmaktan kaçının.
 * Write detailed comments for code that isn't self-documenting:
-  - Uses of z-index
+  - z-index kullanımı
   - Compatibility or browser-specific hacks
 
 ### OOCSS ve BEM
